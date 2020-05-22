@@ -19,9 +19,12 @@ describe("roman literals", () => {
   it('should convert 5 to V', () => {
     expect(numberToRoman(5)).toEqual("V")
   })
-})
 
-// M = 1000
-// V = 5
-// IV = 4
-// III = 3
+  it('should convert 9 to IX', () => {
+    expect(numberToRoman(9)).toEqual("IX")
+  })
+
+  it('should convert 10 to X', () => {
+    expect(numberToRoman(10)).toEqual("X")
+  })
+})

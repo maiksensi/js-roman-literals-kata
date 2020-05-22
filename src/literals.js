@@ -1,6 +1,7 @@
 function numberToRoman(number) {
-  let rest = number % 5;
+  let rest = 0;
   let romanNumber = '';
+
   if (rest == 0) {
     romanNumber = 'V';
   } else if (rest == 4) {
