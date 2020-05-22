@@ -1,5 +1,6 @@
-import sum from "./literals"
-
-test("adds 1 + 2 to equal 3", () => {
-  expect(sum(1, 2)).toBe(3)
+describe('roman literals', () => {
+  it('should convert 1 to I', () => {
+    expect(numberToRoman(1)).toEqual('I')
+  })
 })
+
