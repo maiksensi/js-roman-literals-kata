@@ -1,9 +1,15 @@
 function numberToRoman(number) {
+  let rest = number % 5;
   let romanNumber = '';
-  if (number === 1) {
-    romanNumber = 'I';
+  if (rest == 0) {
+    romanNumber = 'V';
+  } else if (rest == 4) {
+    romanNumber = `IV`;
   } else {
-    romanNumber = `${number}`;
+    for(let i =0; i < rest; i++) {
+      romanNumber += 'I';
+    }
+    
   }
   return romanNumber;
 }
